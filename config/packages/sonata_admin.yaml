@@ -1,0 +1,49 @@
+sonata_admin:
+    title: 'Sonata Admin'
+    search: true
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: left }
+    options:
+        legacy_twig_text_extension: false
+    templates:
+        layout: 'Admin/standard_layout.html.twig'
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+exploit_it_sonata_gentelella:
+    fast_click: true
+    nprogress: true
+    chart: true
+    echarts: true
+    gauge: true
+    bootstrap_progressbar: true
+    skycons: true
+    flot: true
+    datejs: true
+    jqvmap: true
+    bootstrap_daterangerpicker: true
+    calendar: true
+    switchery: true
+    starrr: true
+    jquery_tag_input: true
+    bootstrap_wysiwyg: true
+    parsley: true
+    cropper: true
+    autosize: true
+    jquery_autocomplete: true
+    ion_rangeslider: true
+    bootstrap_colorpicker: true
+    jquery_inputmask: true
+    jquery_knob: true
+    dropzone: true
+    validator: true
+    jquery_smart_wizard: true
+    pnotify: true
+    jquery_sparklines: true
+    morris: true
+    animate: true
+    easy_pie_chart: true
+    datatables: true

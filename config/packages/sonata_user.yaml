@@ -1,0 +1,9 @@
+sonata_user:
+    impersonating:
+        route: sonata_admin_dashboard
+    security_acl: true
+    manager_type: orm
+    mailer: fos_user.mailer.twig_swift
+    class:
+        user: App\Entity\App\User
+        group: App\Entity\App\Group

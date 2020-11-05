@@ -1,0 +1,49 @@
+sonata_doctrine_orm_admin:
+    # default value is null, so doctrine uses the value defined in the configuration
+    entity_manager: ~
+
+    audit:
+        force: true
+
+    templates:
+        form:
+            - "@SonataDoctrineORMAdmin/Form/form_admin_fields.html.twig"
+        filter:
+            - "@SonataDoctrineORMAdmin/Form/filter_admin_fields.html.twig"
+        types:
+            list:
+                array:      "@ExploitItSonataGentelella/CRUD/list_array.html.twig"
+                boolean:    "@ExploitItSonataGentelella/CRUD/list_boolean.html.twig"
+                date:       "@ExploitItSonataGentelella/CRUD/list_date.html.twig"
+                time:       "@ExploitItSonataGentelella/CRUD/list_time.html.twig"
+                datetime:   "@ExploitItSonataGentelella/CRUD/list_datetime.html.twig"
+                text:       "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                trans:      "@ExploitItSonataGentelella/CRUD/list_trans.html.twig"
+                string:     "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                smallint:   "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                bigint:     "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                integer:    "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                decimal:    "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                identifier: "@ExploitItSonataGentelella/CRUD/base_list_field.html.twig"
+                currency:   "@ExploitItSonataGentelella/CRUD/list_currency.html.twig"
+                percent:    "@ExploitItSonataGentelella/CRUD/list_percent.html.twig"
+                choice:     "@ExploitItSonataGentelella/CRUD/list_choice.html.twig"
+                url:        "@ExploitItSonataGentelella/CRUD/list_url.html.twig"
+
+            show:
+                array:      "@ExploitItSonataGentelella/CRUD/show_array.html.twig"
+                boolean:    "@ExploitItSonataGentelella/CRUD/show_boolean.html.twig"
+                date:       "@ExploitItSonataGentelella/CRUD/show_date.html.twig"
+                time:       "@ExploitItSonataGentelella/CRUD/show_time.html.twig"
+                datetime:   "@ExploitItSonataGentelella/CRUD/show_datetime.html.twig"
+                text:       "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                trans:      "@ExploitItSonataGentelella/CRUD/show_trans.html.twig"
+                string:     "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                smallint:   "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                bigint:     "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                integer:    "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                decimal:    "@ExploitItSonataGentelella/CRUD/base_show_field.html.twig"
+                currency:   "@ExploitItSonataGentelella/CRUD/base_currency.html.twig"
+                percent:    "@ExploitItSonataGentelella/CRUD/base_percent.html.twig"
+                choice:     "@ExploitItSonataGentelella/CRUD/show_choice.html.twig"
+                url:        "@ExploitItSonataGentelella/CRUD/show_url.html.twig"
